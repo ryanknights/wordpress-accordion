@@ -1,0 +1,32 @@
+@border-color      : #eee;
+@active-background : #000;
+@active-color      : #fff;
+
+.tms-accordion
+{
+	> h3
+	{
+		margin : 0;
+		padding : 15px;
+		border-top : 1px solid #000;
+
+		&.active
+		{
+
+		}
+	}
+
+	> section
+	{	
+		display  : none;
+		overflow : hidden;
+		height   : auto;
+		padding  : 15px;
+		margin-bottom : 5px;
+
+		html.no-js &
+		{
+			display : block!important;
+		}
+	}
+}
